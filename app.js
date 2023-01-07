@@ -1,4 +1,20 @@
-// xxxxxxxxxx Working For Sign Up Form xxxxxxxxxx
+import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+
+
+const firebaseConfig = {
+    
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  
+  
+  // Initialize Firebase Authentication and get a reference to the service
+  const auth = getAuth(app);
+
+//Working For Sign Up Form
 // xxxxxxxxxx Full Name Validation xxxxxxxxxx
 function checkUserFullName(){
     var userSurname = document.getElementById("userFullName").value;
@@ -91,6 +107,12 @@ function signUp(){
         return checkUserPassword();
     }else{
 
+          const newUser = createUserWithEmailAndPassword(auth,email, password);
+          
+          newUser.catch((error) => {
+            alert(error.message)
+            alert("Sign Up Successfull")
+          });
     }
 }
 
