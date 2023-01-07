@@ -4,7 +4,14 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 
 const firebaseConfig = {
-    
+    apiKey: "AIzaSyA1Qb1utrYvn7zAtVP39LI1R9CkXAuifgo",
+    databaseURL: "https://userauthenticationapp-14dfd-default-rtdb.firebaseio.com",
+    authDomain: "userauthenticationapp-14dfd.firebaseapp.com",
+    projectId: "userauthenticationapp-14dfd",
+    storageBucket: "userauthenticationapp-14dfd.appspot.com",
+    messagingSenderId: "1021723946696",
+    appId: "1:1021723946696:web:26dbc05e22a1546b56bffd",
+    measurementId: "G-BV6CJMYDBL"
   };
   
   // Initialize Firebase
