@@ -16,11 +16,17 @@
     <title>Sign Up | Firebase Authentication</title>
 </head>
 <body class="bg-light">
-   
+    <style>
+        body{
+            background-image: 
+            url('doc2.jpg');
+            background-size: 2000px 800px;
+        }
+        </style>
     <div class="container-fluid">
         <div class="row mx-1">
             <div class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 text-center mt-5 pb-4 text-primary">
-                <h1 class="h1">USER AUTHENTICATION WEB APP</h1>
+                <h1 class="h1">SMART HEALTH SERVICE</h1>
             </div>
             <div class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 bg-white shadow mb-5 border border-primary">
                 <div class="row">
@@ -62,7 +68,7 @@
         </div>
     </div>
 
-
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -70,20 +76,37 @@
 
     
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-
+<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-app.js"></script>
 
-
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-analytics.js"></script>
 
-
+<!-- Add Firebase products that you want to use -->
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-auth.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
 
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD94SWwZAiJ-wO3EdFyKUd2PxOFRnRS9Jg",
+  authDomain: "patient-47a96.firebaseapp.com",
+  databaseURL: "https://patient-47a96-default-rtdb.firebaseio.com",
+  projectId: "patient-47a96",
+  storageBucket: "patient-47a96.appspot.com",
+  messagingSenderId: "1080833709367",
+  appId: "1:1080833709367:web:7d0c5ce904f6bc0664f6b2",
+  measurementId: "G-9LSZ9DGFRZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     
     <!-- Custom JavaScript -->
-    <script src="./app.js"></script>
+    <script src="./API.js"></script>
 
 </body>
 </html>
